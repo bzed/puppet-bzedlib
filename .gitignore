@@ -1,3 +1,10 @@
+
+# vi swap files
+*.swp
+
+
+# github default .gitignore for ruby like stuff:
+
 *.gem
 *.rbc
 /.config
