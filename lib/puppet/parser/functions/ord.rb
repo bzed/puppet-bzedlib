@@ -13,8 +13,14 @@ EOS
 
     value = args[0]
     value = value.to_s
+    if RUBY_VERSION =~ /\A1\.[1-7]/
+        # old ruby is ugly. and there is no ord.
+        value = value[0]
+    else
+        value = value.ord
+    end
 
-    return value.ord
+    return value
   end
 end
 
