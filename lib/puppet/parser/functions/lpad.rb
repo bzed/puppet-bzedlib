@@ -18,7 +18,7 @@ EOS
     num = num.to_i
     count = count.to_i
 
-    format = "%0" + count + "d"
+    format = "%0#{String(count)}d"
     return format % num
   end
 end
